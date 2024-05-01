@@ -30,7 +30,7 @@ spec:
                       - arm64
       containers:
         - name: docker-example
-          image: ghcr.io/prithvi-varla/docker-example:${COMMIT}
+          image: ghcr.io/harisha3193/docker-example:${COMMIT}
           ports:
             - name: http
               containerPort: 3000
