@@ -26,8 +26,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build project with Maven
-        run: mvn clean install
+#      - name: Build project with Maven
+#        run: mvn clean install
 
       - name: Build Docker Image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
@@ -65,7 +65,7 @@ jobs:
       max-parallel: 2
       matrix:
         environment: [ Dev ]
-        region: [ us-east-2 ]
+        region: [ us-west-2 ]
     environment:
       name: ${{ matrix.environment }}
     steps:
@@ -83,5 +83,5 @@ jobs:
         with:
           aws-region: ${{ matrix.region }}
           cluster-name: ${{ secrets.AWS_CLUSTER_NAME }}
-          name: docker-example-name
+          name: docker-example
           chart-path: helm
