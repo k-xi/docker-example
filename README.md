@@ -1,4 +1,4 @@
-#Run command
+#Run command (build first and run to make it run locally)
 java -jar target/docker-0.0.1-SNAPSHOT.jar
 
 #use below postman command
