@@ -13,5 +13,5 @@ spec:
          - destination:
              host: docker-example
              port:
-               number: 80
+               number: 8080
   {{- end }}
