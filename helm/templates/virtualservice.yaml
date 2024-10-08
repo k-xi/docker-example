@@ -11,7 +11,7 @@ spec:
   http:
     -  route:
          - destination:
-             host: docker-example.com
+             host: docker-example
              port:
                number: 8080
   {{- end }}
