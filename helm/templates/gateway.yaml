@@ -8,8 +8,8 @@ spec:
     istio: ingressgateway
   servers:
     - port:
-        number: 80
-        name: docker-example
+        number: 8081
+        name: http-8081
         protocol: HTTP
       hosts:
         - "*"
