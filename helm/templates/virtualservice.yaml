@@ -7,7 +7,7 @@ spec:
   hosts:
     - "*"
   gateways:
-    - docker-example-gw
+    - istio-system/docker-example-gw
   http:
     -  route:
          - destination:
