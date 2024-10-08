@@ -9,7 +9,7 @@ spec:
   servers:
     - port:
         number: 80
-        name: http-80
+        name: docker-example
         protocol: HTTP
       hosts:
         - "*"
