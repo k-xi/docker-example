@@ -15,7 +15,7 @@ spec:
             prefix: "/"
       route:
       - destination:
-          host: docker-example
+          host: docker-example.default.svc.cluster.local
           port:
             number: 80
   {{- end }}
