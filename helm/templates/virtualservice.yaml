@@ -6,13 +6,16 @@ metadata:
   namespace: istio-system
 spec:
   hosts:
-    - "*"
+    - "docker-example.com"
   gateways:
     - docker-example-gw
   http:
-    -  route:
-         - destination:
-             host: docker-example
-             port:
-               number: 80
+    - match:
+        - uri:
+            prefix: "/"
+      route:
+      - destination:
+          host: docker-example
+          port:
+            number: 80
   {{- end }}
