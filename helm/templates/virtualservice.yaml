@@ -3,11 +3,12 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: docker-example-vs
+  namespace: istio-system
 spec:
   hosts:
     - "*"
   gateways:
-    - istio-system/docker-example-gw
+    - docker-example-gw
   http:
     -  route:
          - destination:
