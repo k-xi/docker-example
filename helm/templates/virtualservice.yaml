@@ -3,7 +3,6 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: docker-example-vs
-  namespace: istio-system
 spec:
   hosts:
     - "docker-example.com"
